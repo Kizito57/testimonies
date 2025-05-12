@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "testimonial1 testimonial1 testimonial2 testimonial5"
+    "testimonial3 testimonial4 testimonial4 testimonial5";
+  gap: 1rem;
+  padding: 2rem;
+}
+
+section {
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.testimonial1 { grid-area: testimonial1; background-color: hsl(263, 55%, 52%); color: white; }
+.testimonial2 { grid-area: testimonial2; background-color: hsl(217, 19%, 35%); color: white; }
+.testimonial3 { grid-area: testimonial3; background-color: white; color: black; }
+.testimonial4 { grid-area: testimonial4; background-color: hsl(219, 29%, 14%); color: white; }
+.testimonial5 { grid-area: testimonial5; background-color: white; color: black; }
+
+.img {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.prof h2 {
+  font-size: 0.95rem;
+}
+
+.prof p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+h1 {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
