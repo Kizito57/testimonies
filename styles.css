@@ -24,11 +24,26 @@ section {
   padding: 1.5rem;
 }
 
-.testimonial1 { grid-area: testimonial1; background-color: hsl(263, 55%, 52%); color: white; }
-.testimonial2 { grid-area: testimonial2; background-color: hsl(217, 19%, 35%); color: white; }
-.testimonial3 { grid-area: testimonial3; background-color: white; color: black; }
-.testimonial4 { grid-area: testimonial4; background-color: hsl(219, 29%, 14%); color: white; }
-.testimonial5 { grid-area: testimonial5; background-color: white; color: black; }
+.testimonial1 {
+  grid-area: testimonial1; 
+  background-color: hsl(263, 55%, 52%);
+  color: white; }
+.testimonial2 {
+  grid-area: testimonial2;
+  background-color: hsl(217, 19%, 35%);
+  color: white; }
+.testimonial3 {
+  grid-area: testimonial3;
+  background-color: white;
+  color: black; }
+.testimonial4 {
+  grid-area: testimonial4;
+  background-color: hsl(219, 29%, 14%);
+  color: white; }
+.testimonial5 {
+  grid-area: testimonial5; 
+  background-color: white; 
+  color: black; }
 
 .img {
   display: flex;
@@ -61,3 +76,27 @@ p {
   font-size: 0.85rem;
   line-height: 1.4;
 }
+/* Responsive layout for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  #main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "testimonial1 testimonial1"
+      "testimonial2 testimonial5"
+      "testimonial3 testimonial4";
+  }
+}
+
+/* Responsive layout for phones (max-width: 600px) */
+@media (max-width: 600px) {
+  #main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "testimonial1"
+      "testimonial2"
+      "testimonial3"
+      "testimonial4"
+      "testimonial5";
+  }
+}
+
